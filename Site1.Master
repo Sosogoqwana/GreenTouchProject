@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="GreenTouch.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="CSS/Customstylesheet.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="Bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="Bootstrap/popper.min.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="FontAwesome/css/all.css" rel="stylesheet" />
+    `
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+      <img src="images/icon2.jpg" width="40" height="40"/>
+      GreenTouch
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>       
+    </ul>
+ 
+  </div>
+            <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+</nav>
+        
+        <!-- Main Content Placeholder-->        
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <!-- Main Content Placeholder-->  
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton1" runat="server" >Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton2" runat="server" >Route Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton3" runat="server">Time Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton CssClass="footerlinks" ID="LinkButton4" runat="server">Bus Management</asp:LinkButton>
+                            &nbsp;
+                             <asp:LinkButton CssClass="footerlinks" ID="LinkButton5" runat="server">Ticket Issuing</asp:LinkButton>
+                            &nbsp;
+                             <asp:LinkButton CssClass="footerlinks" ID="LinkButton6" runat="server">User Management</asp:LinkButton>
+                            &nbsp;
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All Rights Reserved.
+                            <a class="footerlinks" href="#" target="_blank">GreenTouch</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+    </form>
+</body>
+</html>
